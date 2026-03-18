@@ -935,8 +935,8 @@ h4 { font-size: 1rem; font-weight: 600; }
 }
 
 .cat-icon {
-  width: 140px;
-  height: 140px;
+  width: 135px;
+  height: 135px;
   background: var(--color-white);
   border-radius: var(--radius-md);
   display: flex;
