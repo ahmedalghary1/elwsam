@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="متجر الوسام - أفضل تجربة تسوق إلكتروني في العالم العربي" />
+  <title>متجر الوسام | الصفحة الرئيسية</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================
+       PROMO BANNER
+       ============================ -->
+  <div class="promo-banner" role="banner">
+    <span>🎉</span>
+    <span>شحن مجاني على جميع الطلبات التي تتجاوز <strong>1000 جنيه</strong> — استخدم الكود: <strong>NOOR10</strong></span>
+    <button class="close-promo" aria-label="إغلاق الإعلان">✕</button>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="التنقل الرئيسي">
+    <div class="navbar-inner">
+      <div class="navbar-row1">
+        <button class="hamburger-btn" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
+        <a href="index.html" class="navbar-logo"><div class="logo-icon">
+          <img src="./image/ELWSAM-LOGO2020.png" alt="">
+        </div><span class="logo-text">متجر <span>الوسام</span></span></a>
+        <div class="navbar-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="products.html">المنتجات</a>
+          <a href="#">العروض</a>
+          <a href="#">تواصل معنا</a>
+        </div>
+        <div class="navbar-actions">
+          <a href="wishlist.html" class="nav-icon-btn" aria-label="المفضلة"><i class="far fa-heart"></i><span class="nav-badge wishlist-count" style="display:none">0</span></a>
+          <a href="cart.html" class="nav-icon-btn" aria-label="السلة">	<i class="fas fa-shopping-cart"></i><span class="nav-badge cart-count" style="display:none">0</span></a>
+          <a href="login.html" class="nav-icon-btn" aria-label="حسابي"><i class="far fa-user"></i></a>
+        </div>
+      </div>
+      <div class="navbar-row2">
+        <div class="navbar-search">
+          <div class="search-box">
+            <input type="search" placeholder="ابحث عن منتجات، ماركات..." aria-label="بحث في المتجر" readonly />
+            <button class="search-btn" aria-label="بحث"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay & Menu -->
+  <div class="mobile-menu-overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu" role="dialog" aria-label="القائمة الجانبية">
+    <button class="mobile-menu-close" aria-label="إغلاق القائمة">✕</button>
+    <nav class="mobile-menu-links">
+      <a href="index.html" class="active"><span class="link-icon">🏠</span>الرئيسية</a>
+      <a href="products.html"><span class="link-icon">🛍️</span>جميع المنتجات</a>
+      <a href="#"><span class="link-icon">🏷️</span>العروض والخصومات</a>
+      <a href="#"><span class="link-icon">📦</span>طلباتي</a>
+      <div class="mobile-menu-divider"></div>
+      <a href="#"><span class="link-icon">❤️</span>المفضلة</a>
+      <a href="cart.html"><span class="link-icon">🛒</span>سلة التسوق</a>
+      <div class="mobile-menu-divider"></div>
+      <a href="#"><span class="link-icon">👤</span>حسابي</a>
+      <a href="#"><span class="link-icon">📞</span>تواصل معنا</a>
+    </nav>
+  </aside>
+
+  <!-- ============================
+       MAIN CONTENT
+       ============================ -->
+  <main>
+
+    <!-- ============================
+         HERO SECTION
+         ============================ -->
+    <section class="hero" aria-label="العرض الرئيسي">
+      <div class="hero-bg-pattern" aria-hidden="true"></div>
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-content container">
+          <div class="hero-badge">
+            <span>تخفيضات الموسم — حتى 70% خصم</span>
+          </div>
+          <h1 class="hero-title">
+            كل ما تحتاجه<br />
+            <span class="highlight">في مكان واحد</span>
+          </h1>
+          <p class="hero-subtitle">
+            اكتشف آلاف المنتجات المختارة بعناية بأفضل الأسعار وجودة لا مثيل لها.
+            شحن سريع وإرجاع مجاني خلال 30 يومًا.
+          </p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn btn-primary btn-lg">
+               تسوق الآن
+            </a>
+            <a href="#" class="btn btn-outline-white btn-lg">
+              العروض الحصرية
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-side" style="display:none;">
+          <!-- يظهر على ديسكتوب -->
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-num">+50K</span>
+            <span class="stat-label">منتج متاح</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-num">+20K</span>
+            <span class="stat-label">عميل سعيد</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-label">تقييم المتجر</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         BANNER STRIP
+         ============================ -->
+    <div class="banner-strip">
+      <div class="banner-strip-inner">
+        <div class="strip-item">
+          <div class="strip-icon"><i class="fas fa-truck-fast"></i></div>
+          <div class="strip-text">
+            <strong>شحن مجاني</strong>
+            <span>على الطلبات فوق 1000 جنيه</span>
+          </div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-icon"><i class="fas fa-rotate-left"></i></div>
+          <div class="strip-text">
+            <strong>إرجاع مجاني</strong>
+            <span>خلال 30 يوم بلا شروط</span>
+          </div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-icon">	<i class="fas fa-lock"></i></div>
+          <div class="strip-text">
+            <strong>دفع آمن 100%</strong>
+            <span>تشفير SSL محمي</span>
+          </div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-icon">	<i class="fas fa-headset"></i></div>
+          <div class="strip-text">
+            <strong>دعم 24/7</strong>
+            <span>نحن دائمًا هنا لمساعدتك</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================
+         CATEGORIES SECTION
+         ============================ -->
+    <section class="categories-section page-section" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <h2 id="categories-heading">تسوق حسب الفئة</h2>
+            <p>استكشف مجموعاتنا الواسعة</p>
+          </div>
+          <a href="products.html" class="view-all-btn">كل الفئات ←</a>
+        </div>
+
+        <div class="categories-grid">
+          <a href="products.html?cat=electronics" class="category-card" aria-label="المشتركات">
+            <div class="cat-icon"><img src="./image/مشترك-usb-بالسلك-ws-310.jpg" alt=""></div>
+            <span class="cat-name">المشتركات</span>
+            <span class="cat-count">50 منتج</span>
+          </a>
+          <a href="products.html?cat=fashion" class="category-card" aria-label="الفيشة">
+            <div class="cat-icon"><img src="./image/فيشة-دكر-صاروخ-16-امبير-اسود-ws128.jpg" alt=""></div>
+            <span class="cat-name">الفيشة</span>
+            <span class="cat-count">100 منتج</span>
+          </a>
+          <a href="products.html?cat=home" class="category-card" aria-label="الوش">
+            <div class="cat-icon"><img src="./image/وش-كلاسيك-اسودws164.jpg" alt=""></div>
+            <span class="cat-name">قسم الوش</span>
+            <span class="cat-count">40 منتج</span>
+          </a>
+          <a href="products.html?cat=beauty" class="category-card" aria-label="الجرس">
+            <div class="cat-icon"><img src="./image/جري-عصفور-سيفا-137.jpg" alt=""></div>
+            <span class="cat-name">قسم الجرس</span>
+            <span class="cat-count">70 منتج</span>
+          </a>
+          <a href="products.html?cat=sports" class="category-card" aria-label="اللمبات">
+            <div class="cat-icon"><img src="./image/لمبة-ليد-15-وات-الوسام-ws-247.jpg" alt=""></div>
+            <span class="cat-name">قسم اللمبات</span>
+            <span class="cat-count">60 منتج</span>
+          </a>
+          <a href="products.html?cat=books" class="category-card" aria-label="الجلوب">
+            <div class="cat-icon"><img src="./image/جلوب-عين-بقرة-شبكة-خشبي-314.jpg" alt=""></div>
+            <span class="cat-name">قسم الجلوب</span>
+            <span class="cat-count">30منتج</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         FEATURED PRODUCTS
+         ============================ -->
+    <section class="featured-section" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <h2 id="featured-heading">منتجات مميزة</h2>
+            <p>اختيارات العملاء الأكثر شعبية</p>
+          </div>
+          <a href="products.html" class="view-all-btn">عرض الكل ←</a>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <article class="product-card"
+            data-product="p1"
+            data-product-id="p1"
+            data-product-name="آيفون 15 Pro Max"
+            data-product-price="5,899">
+            <div class="product-image-wrap">
+              <div class="product-img-placeholder">
+                <a href="./product.html">
+                  <img src="./image/3.png" alt="">
+                </a>
+              </div>
+              <span class="product-badge badge-hot">الأكثر مبيعًا</span>
+              <button class="product-wishlist" data-action="wishlist" data-product-id="p1" aria-label="إضافة للمفضلة">🤍</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag" >قسم المشتركات</span>
+              <h3 class="product-name">مشترك يوما 6A</h3>
+              <div class="product-rating">
+                <div class="stars" aria-label="تقييم 4.9 من 5">★★★★★</div>
+                <span class="rating-count">(521)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="price-group">
+                  <span class="price-current">500 ج.م</span>
+                  <span class="price-original">600 ج.م</span>
+                </div>
+                <button class="add-to-cart-btn" data-action="add-to-cart" aria-label="أضف للسلة"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card"
+            data-product="p2"
+            data-product-id="p2"
+            data-product-name="مشترك 2EU & 2UK"
+            data-product-price="429">
+            <div class="product-image-wrap">
+              <div class="product-img-placeholder"><img src="./image/5-1.png" alt=""></div>
+              <span class="product-badge badge-new">جديد</span>
+              <button class="product-wishlist" data-action="wishlist" data-product-id="p2" aria-label="إضافة للمفضلة">🤍</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">قسم المشتركات</span>
+              <h3 class="product-name">مشترك 2EU & 2UK</h3>
+              <div class="product-rating">
+                <div class="stars" aria-label="تقييم 4.7 من 5">★★★★★</div>
+                <span class="rating-count">(189)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="price-group">
+                  <span class="price-current">429 ج.م</span>
+                  <span class="price-original">599 ج.م</span>
+                </div>
+                <button class="add-to-cart-btn" data-action="add-to-cart" aria-label="أضف للسلة"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card"
+            data-product="p3"
+            data-product-id="p3"
+            data-product-name=""
+            data-product-price="4,599"
+            data-product-category="قسم المشتركات"
+            data-product-old-price="5,999"
+            data-product-rating="4.9"
+            data-product-reviews="89">
+            <div class="product-image-wrap">
+              <div class="product-img-placeholder"><img src="./image/6.png" alt=""></div>
+              <button class="product-wishlist" data-action="wishlist" data-product-id="p3" aria-label="إضافة للمفضلة">🤍</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">قسم المشتركات</span>
+              <h3 class="product-name">مشترك الوسام USB</h3>
+              <div class="product-rating">
+                <div class="stars" aria-label="تقييم 4.9 من 5">★★★★★</div>
+                <span class="rating-count">(89)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="price-group">
+                  <span class="price-current">400 ج.م</span>
+                  <span class="price-original">499 ج.م</span>
+                </div>
+                <button class="add-to-cart-btn" data-action="add-to-cart" aria-label="أضف للسلة"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card"
+            data-product="p4"
+            data-product-id="p4"
+            data-product-name="مجموعة كريمات العناية"
+            data-product-price="375"
+            data-product-emoji="💄"
+            data-product-category="جمال وعناية"
+            data-product-old-price="550"
+            data-product-rating="4.8"
+            data-product-reviews="203">
+            <div class="product-image-wrap">
+              <div class="product-img-placeholder"><img src="./image/1.png" alt=""></div>
+              <button class="product-wishlist" data-action="wishlist" data-product-id="p4" aria-label="إضافة للمفضلة">🤍</button>
+            </div>
+            <div class="product-info">
+              <span class="product-category-tag">قسم المشترك</span>
+              <h3 class="product-name">مشترك مودرن</h3>
+              <div class="product-rating">
+                <div class="stars" aria-label="تقييم 4.8 من 5">★★★★★</div>
+                <span class="rating-count">(203)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="price-group">
+                  <span class="price-current">699 ج.م</span>
+                  <span class="price-original">800 ج.م</span>
+                </div>
+                <button class="add-to-cart-btn" data-action="add-to-cart" aria-label="أضف للسلة"><i class="fas fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         OFFERS SECTION
+         ============================ -->
+    <section class="offers-section page-section" aria-labelledby="offers-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <h2 id="offers-heading">العروض الحصرية</h2>
+            <p>عروض محدودة الوقت لا تفوتها</p>
+          </div>
+        </div>
+
+        <div class="offers-grid">
+          <div class="offer-card offer-dark">
+            <span class="offer-emoji" aria-hidden="true"><img src="./image/3.png" style="width:200px; height:200px; object-fit:contain;" alt=""></span>
+            <div class="offer-tag">المشتركات</div>
+            <div class="offer-title">أحدث المشتركات<br />بأسعار حصرية</div>
+            <div class="offer-discount">حتى 60%</div>
+            <a href="products.html" class="btn btn-primary btn-sm" style="width:fit-content">تسوق الآن</a>
+          </div>
+
+          <div class="offer-card offer-yellow">
+            <span class="offer-emoji" aria-hidden="true"><img src="./image/21-2.png" style="width:200px; height:200px; object-fit:contain;" alt=""></span>
+            <div class="offer-tag">الكشاف والإضاءة</div>
+            <div class="offer-title">أحدث التصاميم<br />لإضاءة مثالية</div>
+            <div class="offer-discount">خصم 40%</div>
+            <a href="products.html" class="btn btn-black btn-sm" style="width:fit-content">اكتشف الآن</a>
+          </div>
+
+          <div class="offer-card offer-light">
+            <span class="offer-emoji" aria-hidden="true"><img src="./image/15.png" style="width:200px; height:200px; object-fit:contain;" alt=""></span>
+            <div class="offer-tag">دواية ديكور</div>
+            <div class="offer-title"> ديكورات<br />دوايات مميزة</div>
+            <div class="offer-discount">من 100 ج.م</div>
+            <a href="products.html" class="btn btn-black btn-sm" style="width:fit-content">تصفح الآن</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- ============================
+       FOOTER
+       ============================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon"><img src="./image/ELWSAM-LOGO2020.png" alt=""></div>
+            <span class="logo-text">متجر <span>الوسام</span></span>
+          </div>
+          <p class="footer-desc">
+            متجرك الإلكتروني الأول في العالم العربي. نوفر لك أفضل المنتجات بأسعار تنافسية وتجربة تسوق لا تُنسى.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="تويتر">𝕏</a>
+            <a href="#" class="social-btn" aria-label="انستغرام">📸</a>
+            <a href="#" class="social-btn" aria-label="فيسبوك">𝕗</a>
+            <a href="#" class="social-btn" aria-label="يوتيوب">▶</a>
+            <a href="#" class="social-btn" aria-label="تيك توك">♪</a>
+          </div>
+        </div>
+
+        <!-- Links 1 -->
+        <div>
+          <h3 class="footer-col-title">روابط سريعة</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="products.html">جميع المنتجات</a></li>
+            <li><a href="wishlist.html">المفضلة</a></li>
+            <li><a href="cart.html">سلة التسوق</a></li>
+            <li><a href="product.html">منتج مميز</a></li>
+          </ul>
+        </div>
+
+        <!-- Links 2 -->
+        <div>
+          <h3 class="footer-col-title">حسابي</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">تسجيل الدخول</a></li>
+            <li><a href="register.html">إنشاء حساب</a></li>
+            <li><a href="profile.html">طلباتي</a></li>
+            <li><a href="checkout.html">إتمام الشراء</a></li>
+            <li><a href="profile.html">بياناتي</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h3 class="footer-col-title">النشرة البريدية</h3>
+          <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);margin-bottom:14px;line-height:1.7;">
+            اشترك ليصلك آخر العروض والتخفيضات الحصرية أولاً.
+          </p>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="بريدك الإلكتروني" aria-label="البريد الإلكتروني" />
+            <button type="button" aria-label="اشتراك">اشترك</button>
+          </div>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.3);margin-top:10px;">
+            🔒 لن نشارك بريدك الإلكتروني مع أي طرف ثالث
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 متجر الوسام. جميع الحقوق محفوظة.</p>
+      <div class="footer-payments">
+        <span class="payment-icon">VISA</span>
+        <span class="payment-icon">مدى</span>
+        <span class="payment-icon">STC</span>
+        <span class="payment-icon">Apple Pay</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bottom Nav -->
+  <nav class="bottom-nav" aria-label="التنقل السفلي">
+    <a href="index.html" aria-label="الرئيسية"><span class="icon">🏠</span>الرئيسية</a>
+    <a href="products.html" aria-label="المنتجات"><span class="icon">🛍️</span>المنتجات</a>
+    <a href="#" aria-label="بحث" onclick="openSearch();return false"><span class="icon"><i class="fas fa-search"></i></span>بحث</a>
+    <a href="wishlist.html" aria-label="المفضلة"><span class="icon">❤️</span>المفضلة</a>
+    <a href="cart.html" aria-label="السلة">
+      <span class="icon">🛒</span>السلة
+      <span class="bnav-badge cart-count" style="display:none">0</span>
+    </a>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

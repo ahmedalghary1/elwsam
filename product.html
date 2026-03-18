@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="شاحن متعدد المنافذ 6USB من متجر الوسام - آمن وعملي للاستخدام اليومي" />
+  <title>مشترك يوما 6A | متجر الوسام</title>
+
+  <!-- الخطوط (جوجل فونت) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- أيقونات Font Awesome (الإصدار الأحدث) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- ملف التنسيقات الأساسي (يفترض أنك تملكه) -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- تنسيقات إضافية بسيطة لضمان ظهور العناصر بشكل صحيح (يمكن نقلها لملف style.css) -->
+  <style>
+    /* تحسين مظهر الأيقونات في الأزرار والروابط */
+    .nav-icon-btn i, .social-btn i, .bottom-nav i, .btn i {
+      margin-inline-end: 0.3rem;
+      vertical-align: middle;
+    }
+    /* ضبط حجم الأيقونات في شريط الخدمات */
+    .strip-icon i {
+      font-size: 1.8rem;
+      color: var(--color-primary, #2563eb);
+    }
+    /* أيقونات وسائل التواصل في الفوتر */
+    .footer-socials .social-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      transition: background-color 0.3s;
+      color: white;
+      text-decoration: none;
+    }
+    .footer-socials .social-btn:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+    /* مؤشر تفاعل للصور المصغرة */
+    .gallery-thumb {
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.3s, border-color 0.3s;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .gallery-thumb.active {
+      opacity: 1;
+      border-color: var(--color-primary, #2563eb);
+    }
+    .gallery-thumb:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== شريط التنقل (بأيقونات Font Awesome) ==================== -->
+  <nav class="navbar" role="navigation" aria-label="التنقل الرئيسي">
+    <div class="navbar-inner">
+      <div class="navbar-row1">
+        <button class="hamburger-btn" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="navbar-logo">
+          <div class="logo-icon"><img src="./image/ELWSAM-LOGO2020.png" alt="شعار متجر الوسام"></div>
+          <span class="logo-text">متجر <span>الوسام</span></span>
+        </a>
+        <div class="navbar-links">
+          <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+          <a href="products.html"><i class="fas fa-box"></i> المنتجات</a>
+          <a href="#"><i class="fas fa-tags"></i> العروض</a>
+          <a href="#"><i class="fas fa-headset"></i> تواصل معنا</a>
+        </div>
+        <div class="navbar-actions">
+          <a href="wishlist.html" class="nav-icon-btn" aria-label="المفضلة">
+            <i class="far fa-heart"></i>
+            <span class="nav-badge wishlist-count" style="display:none">0</span>
+          </a>
+          <a href="cart.html" class="nav-icon-btn" aria-label="السلة">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="nav-badge cart-count" style="display:none">0</span>
+          </a>
+          <a href="login.html" class="nav-icon-btn" aria-label="حسابي">
+            <i class="far fa-user-circle"></i>
+          </a>
+        </div>
+      </div>
+      <div class="navbar-row2">
+        <div class="navbar-search">
+          <div class="search-box">
+            <input type="search" placeholder="ابحث عن منتجات، ماركات..." aria-label="بحث في المتجر" readonly />
+            <button class="search-btn" aria-label="بحث"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- القائمة الجانبية للموبايل (بأيقونات) -->
+  <div class="mobile-menu-overlay" aria-hidden="true"></div>
+  <aside class="mobile-menu" role="dialog" aria-label="القائمة الجانبية">
+    <button class="mobile-menu-close" aria-label="إغلاق القائمة">✕</button>
+    <nav class="mobile-menu-links">
+      <a href="index.html"><span class="link-icon"><i class="fas fa-home"></i></span> الرئيسية</a>
+      <a href="products.html"><span class="link-icon"><i class="fas fa-box"></i></span> جميع المنتجات</a>
+      <div class="mobile-menu-divider"></div>
+      <a href="#"><span class="link-icon"><i class="far fa-heart"></i></span> المفضلة</a>
+      <a href="cart.html"><span class="link-icon"><i class="fas fa-shopping-cart"></i></span> سلة التسوق</a>
+    </nav>
+  </aside>
+
+  <!-- ==================== المحتوى الرئيسي ==================== -->
+  <main>
+    <div class="product-detail-page">
+      <div class="container">
+
+        <!-- مسار التنقل (بأيقونات) -->
+        <nav class="breadcrumb" aria-label="مسار التنقل">
+          <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+          <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+          <a href="products.html"><i class="fas fa-box"></i> المنتجات</a>
+          <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+          <a href="#"><i class="fas fa-bolt"></i> إلكترونيات</a>
+          <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+          <span class="current"><i class="fas fa-plug"></i> مشترك يوما 6A</span>
+        </nav>
+
+        <!-- شبكة المنتج (الصور + المعلومات) -->
+        <div class="product-detail-grid">
+
+          <!-- ========== معرض الصور (محسّن بالكامل) ========== -->
+          <div class="product-gallery">
+            <!-- الصورة الرئيسية (قابلة للنقر للعودة للأصل) -->
+            <div class="gallery-main" aria-label="صورة المنتج الرئيسية">
+              <span class="main-emoji" style="position:relative;z-index:2;">
+                <!-- الصورة الأصلية (يفضل أن تكون 3.png) -->
+                <img src="./image/3.png" alt="مشترك يوما 6A - صورة رئيسية" id="main-product-image">
+              </span>
+              <!-- طبقة شفافة للزينة فقط (لا تمنع النقر) -->
+              <div style="position:absolute;inset:0;background:radial-gradient(circle at center, rgba(255,215,0,0.12), transparent 70%); pointer-events: none;"></div>
+            </div>
+
+            <!-- الصور المصغرة (أضفنا صورتين مختلفتين للتجربة) -->
+            <div class="gallery-thumbs" role="listbox" aria-label="صور المنتج">              
+              <div class="gallery-thumb active" role="option" aria-selected="true" tabindex="0" data-src="./image/2.png">
+                <img src="./image/2.png" alt="مشترك يوما 6A - صورة جانبية 1">
+              </div>
+              <div class="gallery-thumb" role="option" aria-selected="false" tabindex="0" data-src="./image/3.png">
+                <img src="./image/3.png" alt="مشترك يوما 6A - صورة جانبية 2">
+              </div>
+              <!-- يمكنك إضافة المزيد من الصور بنفس الطريقة -->
+              <!-- <div class="gallery-thumb" data-src="./image/4.png"><img src="./image/4.png" alt="صورة 3"></div> -->
+            </div>
+          </div>
+
+          <!-- ========== لوحة المعلومات ========== -->
+          <div class="product-info-panel">
+            <span class="category-tag"><i class="fas fa-plug"></i> مشتركات</span>
+            <h1 class="product-title">مشترك يوما 6A</h1>
+
+            <div class="rating-row">
+              <div class="stars" aria-label="تقييم 4.8 من 5">★★★★★</div>
+              <span class="rating-num">4.8</span>
+              <a href="#reviews" class="review-count"><i class="far fa-comments"></i> 128 تقييم</a>
+              <span style="color:var(--color-success);font-size:0.82rem;font-weight:700;"><i class="fas fa-check-circle"></i> متوفر في المخزون</span>
+            </div>
+
+            <div class="price-section">
+              <span class="price-main">600 ج.م</span>
+              <span class="price-old">700 ج.م</span>
+              <span class="discount-tag"><i class="fas fa-tag"></i> وفّر 100 ج.م</span>
+            </div>
+
+            <div class="product-divider"></div>
+
+            <p style="font-size:0.9rem;color:var(--color-gray-600);line-height:1.8;">
+              <i class="fas fa-check-circle" style="color:var(--color-success);"></i> شاحن متعدد المنافذ WS3341 – آمن وعملي للاستخدام اليومي. 
+              مصنوع من خامة مقاومة للحريق (P.C Anti Fire)، مزود بـ 6 مخارج USB Type-A، 
+              سلك بطول 2 متر، يدخل 180-240V، لون أسود، أبعاد (161x97x30) مم، وزن 417 جرام.
+            </p>
+
+            <div class="product-divider"></div>
+
+            <!-- الكمية -->
+            <div>
+              <div class="variant-label"><i class="fas fa-sort-amount-up"></i> الكمية</div>
+              <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+                <div class="qty-selector">
+                  <button class="qty-btn" id="qty-minus" aria-label="تقليل الكمية"><i class="fas fa-minus"></i></button>
+                  <span class="qty-value" id="qty-display">1</span>
+                  <button class="qty-btn" id="qty-plus" aria-label="زيادة الكمية"><i class="fas fa-plus"></i></button>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- أزرار الإجراءات -->
+            <div class="detail-actions">
+              <button class="btn btn-primary btn-lg" id="detail-add-to-cart"
+                data-product-id="p1" data-product-name="مشترك يوما 6A" data-product-price="600"
+                aria-label="أضف إلى سلة التسوق">
+                <i class="fas fa-cart-plus"></i> أضف إلى السلة
+              </button>
+              <button class="wishlist-btn-lg" data-action="wishlist" data-product-id="p1"
+                data-product-name="مشترك يوما 6A" data-product-price="600" data-product-emoji="🔌"
+                data-product-category="المشتركات" data-product-old-price="700"
+                data-product-rating="4.8" data-product-reviews="128" aria-label="أضف للمفضلة">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+
+            <a href="checkout.html" class="btn btn-outline btn-full" style="margin-top:-8px;">
+              <i class="fas fa-bolt"></i> اشتر الآن
+            </a>
+
+            <div class="product-divider"></div>
+
+            <!-- شارات الثقة (بأيقونات) -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <div style="display:flex;align-items:center;gap:8px;font-size:0.78rem;color:var(--color-gray-600);background:var(--color-gray-100);padding:10px 12px;border-radius:var(--radius-sm);">
+                <i class="fas fa-truck-fast" style="font-size:1rem;"></i>
+                <span>شحن مجاني فوق 1000 ج.م</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;font-size:0.78rem;color:var(--color-gray-600);background:var(--color-gray-100);padding:10px 12px;border-radius:var(--radius-sm);">
+                <i class="fas fa-undo-alt" style="font-size:1rem;"></i>
+                <span>إرجاع مجاني 30 يوم</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;font-size:0.78rem;color:var(--color-gray-600);background:var(--color-gray-100);padding:10px 12px;border-radius:var(--radius-sm);">
+                <i class="fas fa-lock" style="font-size:1rem;"></i>
+                <span>دفع آمن ومشفر</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;font-size:0.78rem;color:var(--color-gray-600);background:var(--color-gray-100);padding:10px 12px;border-radius:var(--radius-sm);">
+                <i class="fas fa-shield-alt" style="font-size:1rem;"></i>
+                <span>ضمان سنة كاملة</span>
+              </div>
+            </div>
+          </div><!-- /product-info-panel -->
+        </div><!-- /product-detail-grid -->
+
+        <!-- ==================== التبويبات (الوصف، المواصفات، التقييمات، الشحن) ==================== -->
+        <div class="product-tabs" id="reviews">
+          <div class="tabs-header" role="tablist">
+            <button class="tab-btn active" role="tab" data-tab="tab-description" aria-selected="true"><i class="fas fa-align-left"></i> الوصف</button>
+            <button class="tab-btn" role="tab" data-tab="tab-specs" aria-selected="false"><i class="fas fa-microchip"></i> المواصفات</button>
+            <button class="tab-btn" role="tab" data-tab="tab-reviews" aria-selected="false"><i class="far fa-star"></i> التقييمات (128)</button>
+            <button class="tab-btn" role="tab" data-tab="tab-shipping" aria-selected="false"><i class="fas fa-shipping-fast"></i> الشحن</button>
+          </div>
+
+          <!-- محتوى التبويبات (مختصر للتوضيح) -->
+          <div class="tab-content active" id="tab-description" role="tabpanel">
+            <p><i class="fas fa-check-circle" style="color:var(--color-success);"></i> <strong>الخامة:</strong> (P.C) Anti Fire</p>
+            <p><i class="fas fa-usb"></i> <strong>المخارج:</strong> 6 USB Type A</p>
+            <p><i class="fas fa-ruler"></i> <strong>الأبعاد:</strong> (161x97x30) mm</p>
+            <p><i class="fas fa-cable-car"></i> <strong>السلك:</strong> 2 متر</p>
+            <p><i class="fas fa-bolt"></i> <strong>الجهد:</strong> 180-240V</p>
+            <p><i class="fas fa-palette"></i> <strong>اللون:</strong> أسود</p>
+            <p><i class="fas fa-weight-hanging"></i> <strong>الوزن:</strong> 417 جرام</p>
+            <p><i class="fas fa-barcode"></i> <strong>الموديل:</strong> WS3341</p>
+          </div>
+
+          <div class="tab-content" id="tab-specs" role="tabpanel">
+            <div style="display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--color-gray-200);border-radius:var(--radius-md);overflow:hidden;margin-top:8px;">
+              <div style="display:grid;grid-template-columns:1fr 1fr;background:var(--color-gray-100);padding:12px 16px;border-bottom:1px solid var(--color-gray-200);">
+                <span style="font-size:0.85rem;font-weight:700;color:var(--color-gray-600);"><i class="fas fa-usb"></i> الاتصال</span>
+                <span style="font-size:0.85rem;font-weight:600;">USB Type-A ×6</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;padding:12px 16px;border-bottom:1px solid var(--color-gray-200);">
+                <span style="font-size:0.85rem;font-weight:700;color:var(--color-gray-600);"><i class="fas fa-bolt"></i> الطاقة</span>
+                <span style="font-size:0.85rem;font-weight:600;">180-240V</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;background:var(--color-gray-100);padding:12px 16px;border-bottom:1px solid var(--color-gray-200);">
+                <span style="font-size:0.85rem;font-weight:700;color:var(--color-gray-600);"><i class="fas fa-weight-hanging"></i> الوزن</span>
+                <span style="font-size:0.85rem;font-weight:600;">417 جرام</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;padding:12px 16px;border-bottom:1px solid var(--color-gray-200);">
+                <span style="font-size:0.85rem;font-weight:700;color:var(--color-gray-600);"><i class="fas fa-fire"></i> مادة التصنيع</span>
+                <span style="font-size:0.85rem;font-weight:600;">P.C Anti Fire</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;background:var(--color-gray-100);padding:12px 16px;border-bottom:1px solid var(--color-gray-200);">
+                <span style="font-size:0.85rem;font-weight:700;color:var(--color-gray-600);"><i class="fas fa-ruler"></i> طول السلك</span>
+                <span style="font-size:0.85rem;font-weight:600;">2 متر</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;padding:12px 16px;">
+                <span style="font-size:0.85rem;font-weight:700;color:var(--color-gray-600);"><i class="fas fa-shield-alt"></i> الضمان</span>
+                <span style="font-size:0.85rem;font-weight:600;">سنة كاملة</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-reviews" role="tabpanel">
+            <!-- ملخص التقييمات (مختصر) -->
+            <div style="display:flex;gap:24px;align-items:center;padding:20px;background:var(--color-gray-100);border-radius:var(--radius-md);margin-bottom:24px;flex-wrap:wrap;">
+              <div style="text-align:center;min-width:80px;">
+                <div style="font-size:2.5rem;font-weight:900;line-height:1;">4.8</div>
+                <div class="stars" style="justify-content:center;margin:6px 0;">★★★★★</div>
+                <div style="font-size:0.78rem;color:var(--color-gray-500);"><i class="far fa-comment"></i> 128 تقييم</div>
+              </div>
+              <!-- توزيع النجوم (اختصارًا) -->
+            </div>
+            <div class="reviews-list">
+              <div class="review-item"> <!-- نموذج تقييم --> </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-shipping" role="tabpanel">
+            <div style="display:flex;flex-direction:column;gap:16px;margin-top:8px;">
+              <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--color-gray-100);border-radius:var(--radius-md);">
+                <i class="fas fa-truck" style="font-size:1.5rem;"></i>
+                <div>
+                  <strong style="display:block;margin-bottom:4px;font-size:0.9rem;">الشحن العادي</strong>
+                  <p style="font-size:0.85rem;color:var(--color-gray-600);line-height:1.6;">3-5 أيام عمل — مجاني على الطلبات فوق 200 جنيه — 25 جنيه للطلبات الأقل</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--color-gray-100);border-radius:var(--radius-md);">
+                <i class="fas fa-rocket" style="font-size:1.5rem;"></i>
+                <div>
+                  <strong style="display:block;margin-bottom:4px;font-size:0.9rem;">الشحن السريع</strong>
+                  <p style="font-size:0.85rem;color:var(--color-gray-600);line-height:1.6;">1-2 أيام عمل — 45 جنيه — متاح في المدن الكبرى فقط</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:14px;align-items:flex-start;padding:16px;background:var(--color-gray-100);border-radius:var(--radius-md);">
+                <i class="fas fa-undo-alt" style="font-size:1.5rem;"></i>
+                <div>
+                  <strong style="display:block;margin-bottom:4px;font-size:0.9rem;">سياسة الإرجاع</strong>
+                  <p style="font-size:0.85rem;color:var(--color-gray-600);line-height:1.6;">يمكنك إرجاع المنتج خلال 30 يوماً من تاريخ الاستلام بشرط أن يكون في حالته الأصلية ومعه الفاتورة. الإرجاع مجاني تماماً.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /product-tabs -->
+
+        <!-- ==================== منتجات مشابهة (بأيقونات) ==================== -->
+        <div class="page-section">
+          <div class="section-header">
+            <div class="section-title">
+              <h2><i class="fas fa-th-large"></i> منتجات مشابهة</h2>
+              <p>قد يعجبك أيضاً</p>
+            </div>
+            <a href="products.html" class="view-all-btn">عرض الكل <i class="fas fa-arrow-left"></i></a>
+          </div>
+          <div class="products-grid" style="--cols:4;">
+            <!-- هنا يمكن إضافة بطاقات منتجات مشابهة مع أيقونات -->
+          </div>
+        </div>
+
+      </div><!-- /container -->
+    </div><!-- /product-detail-page -->
+  </main>
+
+  <!-- ==================== تذييل الصفحة (بأيقونات Font Awesome) ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon"><i class="fas fa-store-alt"></i></div>
+            <span class="logo-text">متجر <span>الوسام</span></span>
+          </div>
+          <p class="footer-desc">تجربة تسوق إلكتروني فريدة في العالم العربي.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-btn" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title"><i class="fas fa-link"></i> روابط سريعة</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="products.html"><i class="fas fa-box"></i> المنتجات</a></li>
+            <li><a href="#"><i class="fas fa-tags"></i> العروض</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title"><i class="fas fa-headset"></i> خدمة العملاء</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-truck"></i> تتبع طلباتي</a></li>
+            <li><a href="#"><i class="fas fa-undo-alt"></i> الإرجاع</a></li>
+            <li><a href="#"><i class="fas fa-question-circle"></i> المساعدة</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title"><i class="fas fa-envelope"></i> النشرة البريدية</h3>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="بريدك الإلكتروني" />
+            <button type="button"><i class="fas fa-paper-plane"></i> اشترك</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 متجر الوسام. جميع الحقوق محفوظة.</p>
+      <div class="footer-payments">
+        <span class="payment-icon"><i class="fab fa-cc-visa"></i> VISA</span>
+        <span class="payment-icon"><i class="fas fa-credit-card"></i> مدى</span>
+        <span class="payment-icon"><i class="fab fa-apple-pay"></i> Apple Pay</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- شريط التنقل السفلي للموبايل (بأيقونات) -->
+  <nav class="bottom-nav" aria-label="التنقل السفلي">
+    <a href="index.html" aria-label="الرئيسية"><span class="icon"><i class="fas fa-home"></i></span>الرئيسية</a>
+    <a href="products.html" aria-label="المنتجات"><span class="icon"><i class="fas fa-box"></i></span>المنتجات</a>
+    <a href="#" aria-label="بحث"><span class="icon"><i class="fas fa-search"></i></span>بحث</a>
+    <a href="#" aria-label="المفضلة"><span class="icon"><i class="far fa-heart"></i></span>المفضلة</a>
+    <a href="cart.html" aria-label="السلة">
+      <span class="icon"><i class="fas fa-shopping-cart"></i></span>السلة
+      <span class="bnav-badge cart-count" style="display:none">0</span>
+    </a>
+  </nav>
+
+  <!-- ملف JavaScript الرئيسي (إن وجد) -->
+  <script src="js/main.js"></script>
+
+  <!-- ==================== كود معرض الصور المحسن (مع تجنب مشكلة عدم الظهور) ==================== -->
+  <script>
+    console.log("JS WORKING");
+    document.addEventListener('DOMContentLoaded', function() {
+      'use strict';
+
+      // العناصر المطلوبة
+      const galleryContainer = document.querySelector('.gallery-main');
+      const galleryImg = galleryContainer?.querySelector('img');
+      const galleryThumbs = document.querySelectorAll('.gallery-thumb');
+
+      // التأكد من وجود العناصر قبل المتابعة
+      if (!galleryImg || galleryThumbs.length === 0) {
+        console.warn('❌ معرض الصور: لم يتم العثور على العناصر المطلوبة.');
+        return;
+      }
+
+      // تخزين المسار الأصلي للصورة الرئيسية (3.png)
+      const originalSrc = galleryImg.src;
+
+      // إضافة مستمع النقر لكل صورة مصغرة
+      galleryThumbs.forEach(thumb => {
+        thumb.addEventListener('click', function () {
+          const newSrc = this.getAttribute('data-src');
+
+          if (!newSrc) return;
+
+          galleryImg.src = newSrc;
+
+          galleryThumbs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+
+      // النقر على الحاوية الرئيسية (الصورة الكبيرة) للعودة إلى الصورة الأصلية
+      galleryContainer.addEventListener('click', function(e) {
+        // تجاهل النقر إذا كان المصدر الحالي لا يختلف عن الأصلي (تجنب إعادة التحميل غير الضرورية)
+        if (galleryImg.src.split('?')[0] !== originalSrc.split('?')[0]) {
+          galleryImg.src = originalSrc + '?t=' + Date.now();
+
+          // إعادة تفعيل أول صورة مصغرة (الافتراضية)
+          galleryThumbs.forEach(t => t.classList.remove('active'));
+          const firstThumb = document.querySelector('.gallery-thumb:first-child');
+          if (firstThumb) firstThumb.classList.add('active');
+
+          console.log('↩️ تم العودة إلى الصورة الأصلية');
+        }
+      });
+
+      // إضافة مؤشر تفاعل (اختياري)
+      galleryThumbs.forEach(thumb => {
+        thumb.addEventListener('mouseenter', () => {
+          thumb.style.opacity = '1';
+        });
+        thumb.addEventListener('mouseleave', () => {
+          if (!thumb.classList.contains('active')) {
+            thumb.style.opacity = '0.7';
+          }
+
+        });
+
+      });
+
+      galleryImg.onerror = function() {
+        console.warn('فشل تحميل الصورة، العودة للأصل');
+        this.src = originalSrc;
+      };
+    });
+  </script>
+</body>
+</html>
